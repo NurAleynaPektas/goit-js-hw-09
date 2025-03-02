@@ -87,12 +87,10 @@ images.forEach((image) => {
   ul.appendChild(li);
 
   a.addEventListener("click", (event) => {
-    //linklerin fotoğrafı indirmesini engellemek için
     event.preventDefault();
   });
 });
 
-//SimpleLightBox kütüphanesiyle modal oluşturmak için
 const lightbox = new SimpleLightbox(".gallery li > a", {
   captionsData: "alt",
   captionDelay: 250,
