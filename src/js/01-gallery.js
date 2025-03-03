@@ -1,6 +1,7 @@
 import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import "simplelightbox/dist/simple-lightbox.min.css"; // Stil dosyasını doğru şekilde import et
 
+// Resim verisini oluştur
 const images = [
   {
     preview:
@@ -67,6 +68,7 @@ const images = [
   },
 ];
 
+// Galeri listesini oluştur
 const ul = document.querySelector("ul.gallery");
 
 images.forEach((image) => {
@@ -78,7 +80,6 @@ images.forEach((image) => {
   a.classList.add("gallery-link");
   img.src = image.preview;
   img.alt = image.description;
-  img.dataset.source = image.original;
   img.classList.add("gallery-image");
   li.classList.add("gallery-item");
 
@@ -91,6 +92,7 @@ images.forEach((image) => {
   });
 });
 
+// Lightbox'ı başlat
 const lightbox = new SimpleLightbox(".gallery li > a", {
   captionsData: "alt",
   captionDelay: 250,
