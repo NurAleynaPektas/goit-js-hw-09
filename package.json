@@ -15,6 +15,7 @@
     "vite": "^6.2.0"
   },
   "dependencies": {
+    "simple-lightbox": "^2.1.0",
     "simplelightbox": "^2.14.3"
   }
 }

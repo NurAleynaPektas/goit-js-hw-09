@@ -1,5 +1,5 @@
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css"; // Stil dosyasını doğru şekilde import et
+import SimpleLightbox from "simple-lightbox";
+import "simple-lightbox/dist/simple-lightbox.min.css";
 
 // Resim verisini oluştur
 const images = [
@@ -70,7 +70,7 @@ const images = [
 
 // Galeri listesini oluştur
 const ul = document.querySelector("ul.gallery");
-
+console.log(ul);
 images.forEach((image) => {
   const li = document.createElement("li");
   const a = document.createElement("a");
@@ -92,7 +92,7 @@ images.forEach((image) => {
   });
 });
 
-// Lightbox'ı başlat
+//Lightbox'ı başlat
 const lightbox = new SimpleLightbox(".gallery li > a", {
   captionsData: "alt",
   captionDelay: 250,
