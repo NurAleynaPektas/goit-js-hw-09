@@ -1,6 +1,5 @@
-import SimpleLightbox from "simple-lightbox";
-import "simple-lightbox/dist/simple-lightbox.min.css";
-
+import SimpleLightbox from "simpleLightbox";
+import simpleLightbox from "simple-lightbox.min.css";
 // Resim verisini oluştur
 const images = [
   {
